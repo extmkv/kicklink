@@ -8,7 +8,7 @@ platforms=("android" "ios")
 deeplink=""
 
 usage() {
-  echo -e "\nUsage: ./deeplink [-p android|ios] -d deeplink"
+  echo -e "\nUsage: kicklink [-p android|ios] -d deeplink"
   echo -e "  -p: Specify the platform (optional, default: both)"
   echo -e "  -d: Specify the deep link"
   echo -e "  -h: Display this help message"

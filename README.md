@@ -1,12 +1,12 @@
-# quicklink
+# kicklink
 
-**quicklink** is a command-line script crafted to simplify the sending of deeplinks on both Android and iOS platforms. It eliminates the need to memorize intricate `adb` and `xcrun` commands by introducing a consistent command-line interface for dispatching deeplinks to the respective platforms. Under the hood, it seamlessly directs deeplinks to Android devices using `adb` and to iOS devices using `xcrun`, all achieved with a single, easy-to-recall command. 
+**kicklink** is a command-line script crafted to simplify the sending of deeplinks on both Android and iOS platforms. It eliminates the need to memorize intricate `adb` and `xcrun` commands by introducing a consistent command-line interface for dispatching deeplinks to the respective platforms. Under the hood, it seamlessly directs deeplinks to Android devices using `adb` and to iOS devices using `xcrun`, all achieved with a single, easy-to-recall command. 
 
 ## Installation
 
 ### Prerequisite
 
-Before installing **quicklink**, make sure you have the following prerequisites:
+Before installing **kicklink**, make sure you have the following prerequisites:
 - **Homebrew**: If you don't have Homebrew installed, you can install it by following the instructions at [https://brew.sh](https://brew.sh).
 - **adb**
 - **XCode**
@@ -19,22 +19,22 @@ Add new tap repository.
 brew tap extmkv/brew
 ```
 
-Install quicklink:
+Install kicklink:
 
 ```bash
-brew install quicklink
+brew install kicklink
 ```
 
-This will download and install the quicklink script on your system.
+This will download and install the kicklink script on your system.
 
 ## Usage
 
 ### Basic Usage
 
-To use **quicklink**, you can run it from the command line with the following syntax:
+To use **kicklink**, you can run it from the command line with the following syntax:
 
 ```bash
-quicklink -p [platform] -d [deeplink]
+kicklink -p [platform] -d [deeplink]
 ```
 
 - `-p`: Specify the platform (android or ios). If not provided, it will dispatch to both Android and iOS.
@@ -45,19 +45,19 @@ quicklink -p [platform] -d [deeplink]
 Dispatch a deeplink to Android:
 
 ```bash
-quicklink -p android -d myapp://example.com/page
+kicklink -p android -d myapp://example.com/page
 ```
 
 Dispatch a deeplink to iOS:
 
 ```bash
-quicklink -p ios -d myapp://example.com/page
+kicklink -p ios -d myapp://example.com/page
 ```
 
 Dispatch a deeplink to both Android and iOS:
 
 ```bash
-quicklink -d myapp://example.com/page
+kicklink -d myapp://example.com/page
 ```
 
 ### Help
@@ -65,7 +65,7 @@ quicklink -d myapp://example.com/page
 You can view the help message by running:
 
 ```bash
-quicklink -h
+kicklink -h
 ```
 
 ## License
